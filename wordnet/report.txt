@@ -1,0 +1,55 @@
+1. Hours to complete the project: 20 hours
+
+2. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (WordNet Data Type): 1. The first issue that I encountered was 
+   reading in the synsets and trying to understand what data structures I 
+   should use. I noticed that RedBlackBST was one of the imports. I knew 
+   that I should use it. Since the Synset data was grouped into pairs I 
+   knew that the key would be a String and the the value would have to be 
+   stored into a Set that would store Integers. This would prevent any 
+   duplicates repeating since we only need the first occurrences. 2.
+   I also used a RedBlackBST for hypernyms. I used the first ST to get
+   the next number from the hypernyms search tree. 
+
+   Problem 2 (ShortestCommonAncestor Data Type): 1. The first issue I 
+   had was with distance from. Kyler explained that we would use 
+   a Separating Hash Symbol Table and a Queue to find the distance. 
+   We would put the value into the Symbol Table with 0 and then enqueue 
+   the value into the queue. Then since if it was not empty we would 
+   dequeue the items from the queue and check the adjacent neighbors to
+   see if there is any items that were not already in the Symbol table 
+   and put it into the Symbol Table and check its neighbors. Once we go 
+   through we return the Symbol Table as it holds distances from each 
+   other. 2. The next hardest problem was with Triad. This was 
+   particularly hard since we needed to have finished ancestor and 
+   distFrom. We would go through both Subset A and B and check 
+   the distances between them. When we found the distances between them
+   we would update the corresponding values and distance. Lastly we
+   would build a new array containing The shortestAncestor and 
+   the edges from V and W.
+
+   Problem 3 (Outcast Data Type): 1. My only issue with Outcast was with 
+   Outcast method. I tried to return the farthest, but every time it would
+   come out with random words and I didn’t understand why. I needed to 
+   keep track of of d which it was updated every time and then compare 
+   it to the largest distance. Then I return the farthest word.
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   Kyler              SI Instructor  He explained everything in great
+                                   detail and put up on the board a 
+                                   visual example of how the graphs
+                                   look like. He also answered questions
+                                   that I didn’t understand.
+
+4. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...
